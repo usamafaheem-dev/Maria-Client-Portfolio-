@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maria Yasin | Software Engineer</title>
+<meta name="description" content="Maria Yasin is a Software Engineer, AI enthusiast, UI/UX and graphic designer who builds software that feels intentional." />
+<meta name="theme-color" content="#f3f3ed" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ambient -->
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+<div class="paper-grid" aria-hidden="true"></div>
+<div class="blob blob--tr" aria-hidden="true"></div>
+<div class="blob blob--bl" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#hero" aria-label="Maria Yasin, home">
+    <span class="brand__mark" aria-hidden="true">M</span>
+    <span class="brand__text">
+      <b>Maria Yasin</b>
+      <em>Software Engineer</em>
+    </span>
+  </a>
+
+  <nav class="nav__nav" aria-label="Primary">
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#journey">Journey</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav__right">
+    <a class="pill pill--dark nav__cta" href="assets/files/Maria-Yasin-CV.pdf" download="Maria-Yasin-CV.pdf">
+      Download CV
+      <svg class="pill__dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 5v14" /><path d="m19 12-7 7-7-7" />
+      </svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer-veil" id="drawerVeil" hidden></div>
+
+<aside class="drawer" id="mobileMenu" aria-label="Menu" hidden>
+  <div class="drawer__top">
+    <span class="drawer__label">Menu</span>
+    <button class="drawer__close" id="drawerClose" type="button" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" aria-hidden="true">
+        <path d="M18 6 6 18" /><path d="m6 6 12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <nav class="drawer__nav">
+    <a href="#about"><span>01</span>About</a>
+    <a href="#services"><span>02</span>Services</a>
+    <a href="#work"><span>03</span>Work</a>
+    <a href="#skills"><span>04</span>Skills</a>
+    <a href="#journey"><span>05</span>Journey</a>
+    <a href="#contact"><span>06</span>Contact</a>
+  </nav>
+
+  <div class="drawer__foot">
+    <p class="drawer__note">Available for work</p>
+    <a class="pill pill--lime drawer__cta" href="assets/files/Maria-Yasin-CV.pdf" download="Maria-Yasin-CV.pdf">
+      Download CV
+      <svg class="pill__dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 5v14" /><path d="m19 12-7 7-7-7" />
+      </svg>
+    </a>
+    <a class="pill pill--line drawer__cta" href="mailto:mariayasin69@gmail.com">Email me</a>
+  </div>
+</aside>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <span class="ghost ghost--hero" aria-hidden="true" data-parallax="0.18">ENGINEER</span>
+
+  <p class="eyebrow eyebrow--center reveal">Who I Am:</p>
+
+  <h1 class="hero__title">
+    <span class="l reveal">I build <mark class="mark">software</mark></span>
+    <span class="l reveal">that feels <em>intentional.</em></span>
+    <span class="l reveal">From <em>idea</em> to <em>interface.</em></span>
+  </h1>
+
+  <p class="hero__sub reveal">
+    Software Engineering student in my 8th semester, working across web development,
+    artificial intelligence, UI/UX and graphic design.
+  </p>
+
+  <div class="hero__cta reveal">
+    <a class="pill pill--dark pill--lg" href="#work">See my work <span class="pill__arrow">&rarr;</span></a>
+    <a class="pill pill--line pill--lg" href="#contact">Get in touch</a>
+  </div>
+
+  <ul class="hero__meta reveal">
+    <li><span class="dot"></span> Available for work</li>
+    <li>Jatlan, Azad Kashmir</li>
+    <li>English &amp; Urdu</li>
+  </ul>
+
+  <!-- On wide screens these float in the empty side gutters; below 1280px
+       they drop into this row under the hero so they never sit on the copy. -->
+  <div class="stickers reveal">
+    <span class="sticker sticker--1">Code first</span>
+    <span class="sticker sticker--3">Built to scale</span>
+    <span class="sticker sticker--2">Design with meaning</span>
+  </div>
+
+  <!-- floating tech tiles with real brand icons -->
+  <div class="chips" aria-hidden="true">
+    <span class="chip chip--a" data-depth="30"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy" /></span>
+    <span class="chip chip--b" data-depth="44"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy" /></span>
+    <span class="chip chip--c" data-depth="22"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" loading="lazy" /></span>
+    <span class="chip chip--d" data-depth="36"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" loading="lazy" /></span>
+  </div>
+
+  <a class="scroll-cue" href="#about"><span class="scroll-cue__line"></span>Scroll</a>
+</section>
+
+<!-- ============ MARQUEE ============
+     Six identical groups: the track slides by exactly -50% (three groups),
+     so groups 4-6 have already taken their place when it loops, leaving no blank
+     tail. Three groups per half also keeps the strip wider than any real
+     viewport (incl. 3440px ultrawide), which is what caused the gap.    -->
+<div class="bands">
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <ul class="mq">
+      <li>Web Development</li><li class="mq__sep">✦</li>
+      <li>Artificial Intelligence</li><li class="mq__sep">✦</li>
+      <li>UI / UX Design</li><li class="mq__sep">✦</li>
+      <li>Graphic Design</li><li class="mq__sep">✦</li>
+      <li>Accessibility</li><li class="mq__sep">✦</li>
+    </ul>
+    <ul class="mq">
+      <li>Web Development</li><li class="mq__sep">✦</li>
+      <li>Artificial Intelligence</li><li class="mq__sep">✦</li>
+      <li>UI / UX Design</li><li class="mq__sep">✦</li>
+      <li>Graphic Design</li><li class="mq__sep">✦</li>
+      <li>Accessibility</li><li class="mq__sep">✦</li>
+    </ul>
+    <ul class="mq">
+      <li>Web Development</li><li class="mq__sep">✦</li>
+      <li>Artificial Intelligence</li><li class="mq__sep">✦</li>
+      <li>UI / UX Design</li><li class="mq__sep">✦</li>
+      <li>Graphic Design</li><li class="mq__sep">✦</li>
+      <li>Accessibility</li><li class="mq__sep">✦</li>
+    </ul>
+    <ul class="mq">
+      <li>Web Development</li><li class="mq__sep">✦</li>
+      <li>Artificial Intelligence</li><li class="mq__sep">✦</li>
+      <li>UI / UX Design</li><li class="mq__sep">✦</li>
+      <li>Graphic Design</li><li class="mq__sep">✦</li>
+      <li>Accessibility</li><li class="mq__sep">✦</li>
+    </ul>
+    <ul class="mq">
+      <li>Web Development</li><li class="mq__sep">✦</li>
+      <li>Artificial Intelligence</li><li class="mq__sep">✦</li>
+      <li>UI / UX Design</li><li class="mq__sep">✦</li>
+      <li>Graphic Design</li><li class="mq__sep">✦</li>
+      <li>Accessibility</li><li class="mq__sep">✦</li>
+    </ul>
+    <ul class="mq">
+      <li>Web Development</li><li class="mq__sep">✦</li>
+      <li>Artificial Intelligence</li><li class="mq__sep">✦</li>
+      <li>UI / UX Design</li><li class="mq__sep">✦</li>
+      <li>Graphic Design</li><li class="mq__sep">✦</li>
+      <li>Accessibility</li><li class="mq__sep">✦</li>
+    </ul>
+  </div>
+</div>
+
+<!-- plain counter-tilted band, no content: it crosses the marquee -->
+<div class="tape" aria-hidden="true"></div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <span class="ghost ghost--right" aria-hidden="true" data-parallax="0.12">ABOUT</span>
+
+  <div class="head reveal">
+    <p class="eyebrow"><i>01</i> About me</p>
+    <h2 class="h2">The <em>story</em> behind<br />the <mark class="mark">screen.</mark></h2>
+  </div>
+
+  <div class="about__grid">
+    <div class="about__text reveal">
+      <p class="lead">
+        I&rsquo;m a Software Engineering student in my <strong>8th semester</strong> at Virtual University
+        of Pakistan. I build for the web, explore artificial intelligence, and design
+        interfaces that feel as good as they look.
+      </p>
+      <p>
+        Alongside my degree I completed a 2-year <strong>Diploma in Uloom-e-Islamia</strong>, and spent
+        <strong>3 years as a Science Tutor</strong> and <strong>3 years teaching Quran &amp; Islamic Studies</strong>
+        at a madrasah. Those years taught me patience, structure, and how to make a hard idea feel simple.
+      </p>
+      <p>
+        That&rsquo;s the same instinct I bring to software: clean logic, calm layouts, and products
+        people actually understand the first time.
+      </p>
+
+      <ul class="tags">
+        <li>English (Fluent)</li>
+        <li>Urdu (Fluent)</li>
+        <li>Open to remote</li>
+        <li>Fast learner</li>
+      </ul>
+    </div>
+
+    <aside class="stats reveal">
+      <div class="stat"><span class="stat__n" data-count="8">0</span><span class="stat__l">Semesters in<br />engineering</span></div>
+      <div class="stat"><span class="stat__n" data-count="6">0</span><span class="stat__l">Years of<br />teaching</span></div>
+      <div class="stat"><span class="stat__n" data-count="5">0</span><span class="stat__l">Professional<br />certifications</span></div>
+      <div class="stat"><span class="stat__n" data-count="3">0</span><span class="stat__l">Shipped<br />projects</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <span class="ghost ghost--right" aria-hidden="true" data-parallax="0.12">WHAT I DO</span>
+
+  <div class="head reveal">
+    <p class="eyebrow"><i>02</i> Services</p>
+    <h2 class="h2">What I <mark class="mark">bring</mark><br />to the table.</h2>
+  </div>
+
+  <div class="svc">
+    <article class="svc__card reveal">
+      <span class="svc__no">01</span>
+      <span class="svc__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy" /></span>
+      <h3>Web Development</h3>
+      <p>Responsive, accessible front-ends built with semantic HTML, modern CSS and JavaScript that still reads clearly six months later.</p>
+      <ul class="mini">
+        <li>Responsive layouts</li>
+        <li>Clean, reusable components</li>
+        <li>Performance &amp; SEO basics</li>
+      </ul>
+    </article>
+
+    <article class="svc__card reveal">
+      <span class="svc__no">02</span>
+      <span class="svc__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy" /></span>
+      <h3>Artificial Intelligence</h3>
+      <p>AI using Python, covering data handling, model fundamentals, and turning classroom experiments into something genuinely usable.</p>
+      <ul class="mini">
+        <li>Python &amp; data prep</li>
+        <li>Model basics</li>
+        <li>Practical automation</li>
+      </ul>
+    </article>
+
+    <article class="svc__card reveal">
+      <span class="svc__no">03</span>
+      <span class="svc__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" loading="lazy" /></span>
+      <h3>UI / UX Design</h3>
+      <p>Wireframes to polished flows. Trained in UI/UX design with Webflow, focused on clarity over decoration.</p>
+      <ul class="mini">
+        <li>Wireframes &amp; flows</li>
+        <li>Design systems</li>
+        <li>Accessibility-first</li>
+      </ul>
+    </article>
+
+    <article class="svc__card reveal">
+      <span class="svc__no">04</span>
+      <span class="svc__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="" loading="lazy" /></span>
+      <h3>Graphic Design</h3>
+      <p>Posters, brand visuals and content design, where composition, colour and type are chosen with intent, never by accident.</p>
+      <ul class="mini">
+        <li>Brand visuals</li>
+        <li>Social content</li>
+        <li>Print &amp; poster design</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="section work" id="work">
+  <span class="ghost ghost--right" aria-hidden="true" data-parallax="0.12">WORK</span>
+
+  <div class="head reveal">
+    <p class="eyebrow"><i>03</i> Selected work</p>
+    <h2 class="h2">Projects built<br />with <em>intention.</em></h2>
+  </div>
+
+  <!-- project 1 -->
+  <article class="proj reveal">
+    <div class="proj__info">
+      <span class="proj__no">01</span>
+      <span class="proj__badge">Final year project</span>
+      <h3 class="proj__title">Accessible Form System</h3>
+      <p class="proj__kicker"><span>WCAG 2.1 AA</span> <span aria-hidden="true">·</span> <span>Keyboard</span> <span aria-hidden="true">·</span> <span>Screen readers</span></p>
+      <p>
+        My university final year project: a form nobody gets stuck on. Proper labels, visible focus, errors announced to screen readers, and a full keyboard path from the first field to submit.
+      </p>
+      <ul class="mini">
+        <li>Semantic labels, fieldsets &amp; ARIA live errors</li>
+        <li>Visible focus states and logical tab order</li>
+        <li>Tested against WCAG 2.1 AA contrast</li>
+      </ul>
+      <ul class="stack">
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy" />HTML</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy" />CSS</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy" />JavaScript</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="" loading="lazy" />Bootstrap</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" loading="lazy" />PHP</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy" />MySQL</li>
+      </ul>
+    </div>
+
+    <figure class="proj__art">
+      <svg viewBox="0 0 760 520" role="img" aria-label="Accessible form interface mockup">
+        <rect x="2" y="2" width="756" height="516" rx="22" fill="#fbfbf7" stroke="#0d0d0d" stroke-width="4" />
+        <path d="M2 24a22 22 0 0 1 22-22h712a22 22 0 0 1 22 22v40H2z" fill="#f0f0e8" />
+        <line x1="2" y1="64" x2="758" y2="64" stroke="#0d0d0d" stroke-width="4" />
+        <circle cx="38" cy="33" r="8" fill="#d8ff00" stroke="#0d0d0d" stroke-width="3" />
+        <circle cx="64" cy="33" r="8" fill="#fbfbf7" stroke="#0d0d0d" stroke-width="3" />
+        <circle cx="90" cy="33" r="8" fill="#fbfbf7" stroke="#0d0d0d" stroke-width="3" />
+
+        <!-- left: form -->
+        <rect x="32" y="94" width="430" height="392" rx="16" fill="#f4f4ee" stroke="#0d0d0d" stroke-width="4" />
+        <rect x="58" y="122" width="150" height="16" rx="8" fill="#0d0d0d" />
+
+        <rect x="58" y="164" width="86" height="11" rx="5" fill="#0d0d0d" opacity="0.65" />
+        <rect x="52" y="182" width="390" height="48" rx="12" fill="#fbfbf7" stroke="#d8ff00" stroke-width="8" />
+        <rect x="58" y="188" width="378" height="36" rx="9" fill="#fbfbf7" stroke="#0d0d0d" stroke-width="3" />
+        <rect x="74" y="202" width="90" height="9" rx="4" fill="#0d0d0d" opacity="0.4" />
+        <rect x="170" y="196" width="3" height="22" fill="#0d0d0d" />
+
+        <rect x="58" y="252" width="60" height="11" rx="5" fill="#0d0d0d" opacity="0.65" />
+        <rect x="58" y="272" width="378" height="36" rx="9" fill="#fbfbf7" stroke="#c0392b" stroke-width="3" />
+        <circle cx="72" cy="330" r="9" fill="#c0392b" />
+        <rect x="70" y="326" width="4" height="2" fill="#fbfbf7" />
+        <path d="M72 326v-4" stroke="#fbfbf7" stroke-width="2.5" stroke-linecap="round" />
+        <rect x="90" y="325" width="190" height="10" rx="5" fill="#c0392b" />
+
+        <rect x="58" y="362" width="100" height="11" rx="5" fill="#0d0d0d" opacity="0.65" />
+        <rect x="58" y="382" width="378" height="36" rx="9" fill="#fbfbf7" stroke="#0d0d0d" stroke-width="3" />
+
+        <rect x="58" y="436" width="150" height="40" rx="20" fill="#0d0d0d" />
+        <rect x="90" y="451" width="86" height="10" rx="5" fill="#d8ff00" />
+
+        <!-- right: a11y checks -->
+        <rect x="486" y="94" width="242" height="182" rx="16" fill="#0d0d0d" />
+        <rect x="510" y="120" width="106" height="12" rx="6" fill="#d8ff00" />
+        <g>
+          <circle cx="520" cy="162" r="11" fill="#d8ff00" />
+          <path d="M515 162l4 4 7-8" stroke="#0d0d0d" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <rect x="542" y="156" width="138" height="11" rx="5" fill="#fbfbf7" opacity="0.8" />
+          <circle cx="520" cy="200" r="11" fill="#d8ff00" />
+          <path d="M515 200l4 4 7-8" stroke="#0d0d0d" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <rect x="542" y="194" width="112" height="11" rx="5" fill="#fbfbf7" opacity="0.8" />
+          <circle cx="520" cy="238" r="11" fill="#d8ff00" />
+          <path d="M515 238l4 4 7-8" stroke="#0d0d0d" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+          <rect x="542" y="232" width="126" height="11" rx="5" fill="#fbfbf7" opacity="0.8" />
+        </g>
+
+        <!-- contrast badge -->
+        <rect x="486" y="296" width="242" height="94" rx="16" fill="#d8ff00" stroke="#0d0d0d" stroke-width="4" />
+        <circle cx="534" cy="343" r="26" fill="#0d0d0d" />
+        <path d="M534 317a26 26 0 0 0 0 52z" fill="#fbfbf7" />
+        <rect x="578" y="326" width="120" height="14" rx="7" fill="#0d0d0d" />
+        <rect x="578" y="350" width="80" height="10" rx="5" fill="#0d0d0d" opacity="0.55" />
+
+        <!-- keyboard -->
+        <rect x="486" y="410" width="242" height="76" rx="16" fill="#f4f4ee" stroke="#0d0d0d" stroke-width="4" />
+        <g fill="#fbfbf7" stroke="#0d0d0d" stroke-width="3">
+          <rect x="506" y="430" width="34" height="22" rx="6" />
+          <rect x="548" y="430" width="34" height="22" rx="6" />
+          <rect x="590" y="430" width="34" height="22" rx="6" fill="#d8ff00" />
+          <rect x="632" y="430" width="76" height="22" rx="6" />
+          <rect x="506" y="458" width="76" height="20" rx="6" />
+          <rect x="590" y="458" width="118" height="20" rx="6" />
+        </g>
+      </svg>
+    </figure>
+
+  </article>
+
+  <!-- project 2 -->
+  <article class="proj proj--flip reveal">
+    <div class="proj__info">
+      <span class="proj__no">02</span>
+      <h3 class="proj__title">E-Commerce Platform</h3>
+      <p class="proj__kicker"><span>Storefront</span> <span aria-hidden="true">·</span> <span>Cart</span> <span aria-hidden="true">·</span> <span>Admin dashboard</span></p>
+      <p>
+        A complete shopping experience with a product catalogue, live search and filters, a persistent cart, a guided checkout, and an admin side for managing products, stock and orders.
+      </p>
+      <ul class="mini">
+        <li>Product catalogue with live search &amp; filters</li>
+        <li>Cart, checkout and order tracking</li>
+        <li>Admin dashboard for stock &amp; orders</li>
+      </ul>
+      <ul class="stack">
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy" />MongoDB</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy" />Express</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy" />React</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy" />Node.js</li>
+      </ul>
+    </div>
+
+    <figure class="proj__art">
+      <svg viewBox="0 0 760 520" role="img" aria-label="E-commerce storefront interface mockup">
+        <defs>
+          <linearGradient id="shopSky" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#d8ff00" /><stop offset="1" stop-color="#a8e000" />
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="756" height="516" rx="22" fill="#fbfbf7" stroke="#0d0d0d" stroke-width="4" />
+        <!-- top bar -->
+        <path d="M2 24a22 22 0 0 1 22-22h712a22 22 0 0 1 22 22v44H2z" fill="#f0f0e8" />
+        <line x1="2" y1="68" x2="758" y2="68" stroke="#0d0d0d" stroke-width="4" />
+        <circle cx="42" cy="36" r="13" fill="#d8ff00" stroke="#0d0d0d" stroke-width="3" />
+        <rect x="70" y="26" width="74" height="18" rx="9" fill="#0d0d0d" />
+        <rect x="230" y="22" width="300" height="28" rx="14" fill="#fbfbf7" stroke="#0d0d0d" stroke-width="3" />
+        <circle cx="252" cy="36" r="6" fill="none" stroke="#0d0d0d" stroke-width="3" />
+        <line x1="257" y1="41" x2="263" y2="47" stroke="#0d0d0d" stroke-width="3" stroke-linecap="round" />
+        <rect x="620" y="20" width="106" height="32" rx="16" fill="#0d0d0d" />
+        <circle cx="642" cy="36" r="6" fill="#d8ff00" />
+        <rect x="656" y="31" width="52" height="10" rx="5" fill="#d8ff00" />
+        <!-- hero banner -->
+        <rect x="28" y="94" width="704" height="132" rx="16" fill="url(#shopSky)" stroke="#0d0d0d" stroke-width="4" />
+        <circle cx="640" cy="130" r="52" fill="#0d0d0d" opacity="0.08" />
+        <circle cx="690" cy="196" r="30" fill="#0d0d0d" opacity="0.08" />
+        <rect x="56" y="122" width="210" height="22" rx="11" fill="#0d0d0d" />
+        <rect x="56" y="154" width="140" height="12" rx="6" fill="#0d0d0d" opacity="0.5" />
+        <rect x="56" y="178" width="126" height="34" rx="17" fill="#0d0d0d" />
+        <rect x="76" y="191" width="86" height="8" rx="4" fill="#d8ff00" />
+        <!-- product cards -->
+        <g stroke="#0d0d0d" stroke-width="4">
+          <rect x="28" y="248" width="222" height="196" rx="16" fill="#f4f4ee" />
+          <rect x="269" y="248" width="222" height="196" rx="16" fill="#f4f4ee" />
+          <rect x="510" y="248" width="222" height="196" rx="16" fill="#f4f4ee" />
+        </g>
+        <!-- product art -->
+        <rect x="46" y="266" width="186" height="98" rx="10" fill="#ff6b5a" />
+        <path d="M78 344c8-34 26-52 48-52s40 18 48 52z" fill="#fbfbf7" opacity="0.85" />
+        <rect x="287" y="266" width="186" height="98" rx="10" fill="#4d7cff" />
+        <rect x="334" y="292" width="92" height="52" rx="10" fill="#fbfbf7" opacity="0.85" />
+        <rect x="360" y="282" width="40" height="16" rx="8" fill="#fbfbf7" opacity="0.85" />
+        <rect x="528" y="266" width="186" height="98" rx="10" fill="#ffb020" />
+        <circle cx="621" cy="315" r="30" fill="#fbfbf7" opacity="0.85" />
+        <circle cx="621" cy="315" r="14" fill="#ffb020" />
+        <!-- product meta -->
+        <g fill="#0d0d0d">
+          <rect x="46" y="378" width="120" height="12" rx="6" />
+          <rect x="46" y="400" width="62" height="16" rx="8" />
+          <rect x="287" y="378" width="120" height="12" rx="6" />
+          <rect x="287" y="400" width="62" height="16" rx="8" />
+          <rect x="528" y="378" width="120" height="12" rx="6" />
+          <rect x="528" y="400" width="62" height="16" rx="8" />
+        </g>
+        <g stroke="#0d0d0d" stroke-width="3">
+          <rect x="182" y="394" width="50" height="28" rx="14" fill="#d8ff00" />
+          <rect x="423" y="394" width="50" height="28" rx="14" fill="#d8ff00" />
+          <rect x="664" y="394" width="50" height="28" rx="14" fill="#d8ff00" />
+        </g>
+        <g fill="#0d0d0d">
+          <rect x="199" y="406" width="16" height="4" rx="2" /><rect x="205" y="400" width="4" height="16" rx="2" />
+          <rect x="440" y="406" width="16" height="4" rx="2" /><rect x="446" y="400" width="4" height="16" rx="2" />
+          <rect x="681" y="406" width="16" height="4" rx="2" /><rect x="687" y="400" width="4" height="16" rx="2" />
+        </g>
+        <!-- pagination -->
+        <circle cx="356" cy="478" r="7" fill="#0d0d0d" />
+        <circle cx="380" cy="478" r="7" fill="#0d0d0d" opacity="0.25" />
+        <circle cx="404" cy="478" r="7" fill="#0d0d0d" opacity="0.25" />
+      </svg>
+    </figure>
+
+  </article>
+
+  <!-- project 3 -->
+  <article class="proj reveal">
+    <div class="proj__info">
+      <span class="proj__no">03</span>
+      <h3 class="proj__title">School Management System</h3>
+      <p class="proj__kicker"><span>Students</span> <span aria-hidden="true">·</span> <span>Attendance</span> <span aria-hidden="true">·</span> <span>Results</span></p>
+      <p>
+        Built from real classroom experience. Role-based dashboards for admin, teachers and students, with records, daily attendance, fee status and results all in one place.
+      </p>
+      <ul class="mini">
+        <li>Role-based dashboards (admin / teacher / student)</li>
+        <li>Attendance, fees and result management</li>
+        <li>Printable reports &amp; class summaries</li>
+      </ul>
+      <ul class="stack">
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy" />MongoDB</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy" />Express</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy" />React</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy" />Node.js</li>
+      </ul>
+    </div>
+
+    <figure class="proj__art">
+      <svg viewBox="0 0 760 520" role="img" aria-label="School management dashboard mockup">
+        <rect x="2" y="2" width="756" height="516" rx="22" fill="#fbfbf7" stroke="#0d0d0d" stroke-width="4" />
+        <!-- sidebar -->
+        <path d="M2 24a22 22 0 0 1 22-22h132v516H24A22 22 0 0 1 2 496z" fill="#0d0d0d" />
+        <circle cx="46" cy="44" r="14" fill="#d8ff00" />
+        <rect x="70" y="36" width="60" height="14" rx="7" fill="#fbfbf7" opacity="0.9" />
+        <rect x="24" y="92" width="112" height="34" rx="10" fill="#d8ff00" />
+        <rect x="40" y="104" width="64" height="10" rx="5" fill="#0d0d0d" />
+        <g fill="#fbfbf7" opacity="0.28">
+          <rect x="24" y="138" width="112" height="34" rx="10" />
+          <rect x="24" y="184" width="112" height="34" rx="10" />
+          <rect x="24" y="230" width="112" height="34" rx="10" />
+          <rect x="24" y="276" width="112" height="34" rx="10" />
+        </g>
+        <!-- stat cards -->
+        <g stroke="#0d0d0d" stroke-width="4">
+          <rect x="182" y="28" width="172" height="104" rx="14" fill="#f4f4ee" />
+          <rect x="372" y="28" width="172" height="104" rx="14" fill="#d8ff00" />
+          <rect x="562" y="28" width="172" height="104" rx="14" fill="#f4f4ee" />
+        </g>
+        <g fill="#0d0d0d">
+          <rect x="204" y="50" width="64" height="26" rx="6" />
+          <rect x="204" y="90" width="92" height="10" rx="5" opacity="0.45" />
+          <rect x="394" y="50" width="76" height="26" rx="6" />
+          <rect x="394" y="90" width="92" height="10" rx="5" opacity="0.45" />
+          <rect x="584" y="50" width="54" height="26" rx="6" />
+          <rect x="584" y="90" width="92" height="10" rx="5" opacity="0.45" />
+        </g>
+        <!-- chart -->
+        <rect x="182" y="152" width="342" height="214" rx="14" fill="#f4f4ee" stroke="#0d0d0d" stroke-width="4" />
+        <rect x="204" y="174" width="110" height="12" rx="6" fill="#0d0d0d" opacity="0.5" />
+        <g stroke="#0d0d0d" stroke-width="3">
+          <rect x="208" y="286" width="42" height="58" rx="6" fill="#d8ff00" />
+          <rect x="262" y="250" width="42" height="94" rx="6" fill="#d8ff00" />
+          <rect x="316" y="268" width="42" height="76" rx="6" fill="#4d7cff" />
+          <rect x="370" y="222" width="42" height="122" rx="6" fill="#d8ff00" />
+          <rect x="424" y="258" width="42" height="86" rx="6" fill="#d8ff00" />
+          <rect x="478" y="238" width="24" height="106" rx="6" fill="#ff6b5a" />
+        </g>
+        <!-- attendance list -->
+        <rect x="544" y="152" width="190" height="214" rx="14" fill="#f4f4ee" stroke="#0d0d0d" stroke-width="4" />
+        <g>
+          <circle cx="576" cy="192" r="14" fill="#ff6b5a" stroke="#0d0d0d" stroke-width="3" />
+          <rect x="600" y="186" width="74" height="12" rx="6" fill="#0d0d0d" opacity="0.6" />
+          <circle cx="706" cy="192" r="9" fill="#d8ff00" stroke="#0d0d0d" stroke-width="3" />
+          <circle cx="576" cy="240" r="14" fill="#4d7cff" stroke="#0d0d0d" stroke-width="3" />
+          <rect x="600" y="234" width="74" height="12" rx="6" fill="#0d0d0d" opacity="0.6" />
+          <circle cx="706" cy="240" r="9" fill="#d8ff00" stroke="#0d0d0d" stroke-width="3" />
+          <circle cx="576" cy="288" r="14" fill="#ffb020" stroke="#0d0d0d" stroke-width="3" />
+          <rect x="600" y="282" width="74" height="12" rx="6" fill="#0d0d0d" opacity="0.6" />
+          <circle cx="706" cy="288" r="9" fill="#fbfbf7" stroke="#0d0d0d" stroke-width="3" />
+          <circle cx="576" cy="336" r="14" fill="#a06bff" stroke="#0d0d0d" stroke-width="3" />
+          <rect x="600" y="330" width="74" height="12" rx="6" fill="#0d0d0d" opacity="0.6" />
+          <circle cx="706" cy="336" r="9" fill="#d8ff00" stroke="#0d0d0d" stroke-width="3" />
+        </g>
+        <!-- footer row -->
+        <rect x="182" y="386" width="552" height="106" rx="14" fill="#f4f4ee" stroke="#0d0d0d" stroke-width="4" />
+        <g fill="#0d0d0d" opacity="0.35">
+          <rect x="204" y="412" width="170" height="12" rx="6" />
+          <rect x="204" y="440" width="300" height="12" rx="6" />
+          <rect x="204" y="464" width="230" height="12" rx="6" />
+        </g>
+        <rect x="614" y="428" width="96" height="34" rx="17" fill="#0d0d0d" />
+        <rect x="634" y="441" width="56" height="8" rx="4" fill="#d8ff00" />
+      </svg>
+    </figure>
+
+  </article>
+
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section skills" id="skills">
+  <div class="head reveal">
+    <p class="eyebrow"><i>04</i> Toolkit</p>
+    <h2 class="h2">Skills &amp; <mark class="mark">strengths.</mark></h2>
+  </div>
+
+  <div class="skills__grid">
+    <div class="bars reveal">
+      <h4 class="micro">Technical</h4>
+
+      <div class="bar">
+        <span><b><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy" />Web Development</b><em>85%</em></span>
+        <div class="bar__track"><i style="--v:85%"></i></div>
+      </div>
+      <div class="bar">
+        <span><b><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" loading="lazy" />UI / UX Design</b><em>80%</em></span>
+        <div class="bar__track"><i style="--v:80%"></i></div>
+      </div>
+      <div class="bar">
+        <span><b><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" alt="" loading="lazy" />Graphic Design</b><em>82%</em></span>
+        <div class="bar__track"><i style="--v:82%"></i></div>
+      </div>
+      <div class="bar">
+        <span><b><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy" />Artificial Intelligence</b><em>75%</em></span>
+        <div class="bar__track"><i style="--v:75%"></i></div>
+      </div>
+      <div class="bar">
+        <span><b><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" loading="lazy" />C++ Programming</b><em>70%</em></span>
+        <div class="bar__track"><i style="--v:70%"></i></div>
+      </div>
+    </div>
+
+    <div class="soft reveal">
+      <h4 class="micro">Soft skills</h4>
+      <ul class="tags">
+        <li>Time Management</li>
+        <li>Problem Solving</li>
+        <li>Critical Thinking</li>
+        <li>Content Creation</li>
+        <li>Effective Communication</li>
+        <li>Creativity</li>
+        <li>Lesson Planning</li>
+        <li>Teaching &amp; Presentation</li>
+      </ul>
+
+      <h4 class="micro micro--gap">Certifications</h4>
+      <ol class="certs">
+        <li><span>Artificial Intelligence Using Python</span><em>DigiSkills.pk</em></li>
+        <li><span>UI/UX Design with Webflow</span><em>DigiSkills.pk</em></li>
+        <li><span>C++ Programming</span><em>Cisco NetAcad</em></li>
+        <li><span>Graphic Designing</span><em>Studio One Eleven</em></li>
+        <li><span>Web Development</span><em>Self-learning &amp; training</em></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="section journey" id="journey">
+  <span class="ghost ghost--right" aria-hidden="true" data-parallax="0.12">JOURNEY</span>
+
+  <div class="head reveal">
+    <p class="eyebrow"><i>05</i> Experience &amp; education</p>
+    <h2 class="h2">The road<br />so <em>far.</em></h2>
+  </div>
+
+  <div class="jr">
+    <!-- education column -->
+    <section class="jr__col reveal" aria-labelledby="edu-h">
+      <h3 class="jr__label" id="edu-h">
+        <span class="jr__badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 9L12 4 2 9l10 5 10-5z" /><path d="M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5" />
+          </svg>
+        </span>
+        Education
+      </h3>
+
+      <article class="jr__card">
+        <span class="jr__when">Nov 2022 to Present</span>
+        <h4>Bachelor&rsquo;s in Software Engineering</h4>
+        <p class="jr__org">Virtual University of Pakistan</p>
+        <p>Currently in the 8th semester. Core focus on software design, programming fundamentals, databases and web technologies.</p>
+        <span class="jr__chip jr__chip--live">In progress</span>
+      </article>
+
+      <article class="jr__card">
+        <span class="jr__when">Nov 2022 to Dec 2024</span>
+        <h4>Diploma in Uloom-e-Islamia</h4>
+        <p class="jr__org">Noor-ul-Quran Institute, Jatlan</p>
+        <p>A two-year diploma completed alongside my engineering degree.</p>
+        <span class="jr__chip">Completed</span>
+      </article>
+    </section>
+
+    <!-- experience column -->
+    <section class="jr__col reveal" aria-labelledby="exp-h">
+      <h3 class="jr__label" id="exp-h">
+        <span class="jr__badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" /><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+          </svg>
+        </span>
+        Experience
+      </h3>
+
+      <article class="jr__card">
+        <span class="jr__when">3 years</span>
+        <h4>Science Tutor, Elementary &amp; Secondary</h4>
+        <p class="jr__org">Private tuition</p>
+        <ul class="mini">
+          <li>Taught Science to elementary and secondary-level students</li>
+          <li>Prepared lessons and explained concepts simply</li>
+          <li>Assigned tasks and tracked student progress</li>
+        </ul>
+      </article>
+
+      <article class="jr__card">
+        <span class="jr__when">3 years</span>
+        <h4>Madrasah Teacher</h4>
+        <p class="jr__org">Quran &amp; Islamic Studies</p>
+        <ul class="mini">
+          <li>Taught students across different age groups</li>
+          <li>Taught Tajweed and basic Quran reading</li>
+          <li>Explained Islamic concepts clearly</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</section>
+
+<!-- ============ CTA STRIP ============ -->
+<section class="cta" aria-label="Call to action">
+  <div class="cta__inner reveal">
+    <p class="cta__kicker">Open for work</p>
+    <h2 class="cta__h">Got something you want <em>built</em>?</h2>
+    <div class="cta__row">
+      <a class="pill pill--dark pill--lg" href="#contact">Start a conversation <span class="pill__arrow">&rarr;</span></a>
+      <a class="pill pill--line pill--lg" href="https://wa.me/923119732343" target="_blank" rel="noopener">Message on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__inner reveal">
+    <h2 class="contact__h">Let&rsquo;s build something <mark class="mark">worth</mark> looking at.</h2>
+
+    <div class="contact__row">
+      <a class="pill pill--lime pill--lg" href="mailto:mariayasin69@gmail.com">Start a project <span class="pill__arrow">&rarr;</span></a>
+      <a class="pill pill--ghost pill--lg" href="tel:+923119732343">0311 9732343</a>
+    </div>
+
+    <a class="contact__mail" href="mailto:mariayasin69@gmail.com">mariayasin69@gmail.com</a>
+  </div>
+
+  <footer class="foot">
+    <span>&copy; 2026 Maria Yasin</span>
+    <span>Jatlan, Azad Kashmir · Pakistan</span>
+    <a href="mailto:mariayasin69@gmail.com">mariayasin69@gmail.com</a>
+  </footer>
+</section>
+
+<!-- floating actions -->
+<div class="fabs">
+  <button class="fab fab--top" id="toTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5" /><path d="m5 12 7-7 7 7" />
+    </svg>
+  </button>
+
+  <a class="fab fab--wa" href="https://wa.me/923119732343" target="_blank" rel="noopener"
+     aria-label="Chat with Maria on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+      <path d="M16.02 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.46 1.72 6.4L3.2 28.8l6.57-1.71a12.75 12.75 0 0 0 6.24 1.6h.01c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.69-12.8-12.69Zm7.45 18.16c-.32.89-1.86 1.7-2.57 1.8-.68.1-1.53.15-2.47-.15-.57-.18-1.3-.42-2.23-.82-3.93-1.7-6.5-5.65-6.69-5.91-.2-.26-1.6-2.13-1.6-4.06 0-1.93 1.01-2.88 1.37-3.27.36-.39.79-.49 1.05-.49.26 0 .52 0 .75.01.24.01.56-.09.88.67.32.79 1.1 2.72 1.2 2.92.1.2.16.43.03.69-.13.26-.2.42-.39.65-.2.23-.41.51-.59.69-.2.19-.4.41-.17.8.23.39 1.02 1.68 2.19 2.72 1.5 1.34 2.77 1.75 3.16 1.95.39.2.62.16.85-.1.23-.26.98-1.14 1.24-1.54.26-.39.52-.32.88-.19.36.13 2.29 1.08 2.68 1.28.39.19.65.29.75.45.1.17.1.95-.22 1.84Z"/>
+    </svg>
+  </a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
